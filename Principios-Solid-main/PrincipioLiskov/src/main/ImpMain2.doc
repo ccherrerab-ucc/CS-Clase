@@ -1,0 +1,18 @@
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class CrearArchivoDoc {
+
+    public static void main(String[] args) {
+
+        String contenido = "Main PRINCIPIOS LISKOV 1.	Crear una instancia de la clase Configuración y pasarle como parámetro una lista de objetos de las subclases de RecursoPersistente.  Agregamos una instancia de cada subclase. 2.	Llamar a los métodos cargarConfiguracion() y salvarConfiguracion() de la instancia de la clase Configuracion creada en el paso anterior. Creamos una lista recursos y agregamos una instancia de cada subclase de RecursoPersistente. Luego, creamos una instancia de la clase Configuracion y pasamos la lista recursos como parámetro. 3.	Finalmente, se llama a los métodos cargarConfiguracion() y salvarConfiguracion() de la instancia de la clase Configuracion.";
+        try (FileOutputStream archivoDoc = new FileOutputStream("ImpMain2.doc")) {
+            archivoDoc.write(contenido.getBytes());
+            archivoDoc.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+}

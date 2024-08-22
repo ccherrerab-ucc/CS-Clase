@@ -1,0 +1,18 @@
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class CrearArchivoDoc {
+
+    public static void main(String[] args) {
+
+        String contenido = "Main RESPONSABILIDAD UNICA. Se crean dos objetos de la clase Factura (factura1 y factura2) con diferentes importes y porcentajes de deducción. Luego, se llama al método getImporteTotal() de cada objeto para obtener el importe total de la factura, que se muestra en la consola con un mensaje.";
+        try (FileOutputStream archivoDoc = new FileOutputStream("ImpMain4.doc")) {
+            archivoDoc.write(contenido.getBytes());
+            archivoDoc.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+}

@@ -1,0 +1,22 @@
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class CrearArchivoDoc {
+
+    public static void main(String[] args) {
+
+        String contenido = "Main inversión de dependencias. Creamos un objeto de la clase Factura y le asignamos valores a sus atributos. Luego, llamamos al método calcularTotal() para calcular el total de la factura, que a su vez llama a los métodos de las clases Deduccion e Iva para calcular los impuestos correspondientes. Finalmente, imprimimos los resultados.Cabe destacar que en el constructor de la clase Factura estamos inicializando el atributo impuesto con un objeto de la clase Deduccion, pero luego lo estamos reasignando con un objeto de la clase Iva dentro del método calcularTotal().";
+        try (FileOutputStream archivoDoc = new FileOutputStream("line.doc")) {
+            archivoDoc.write(contenido.getBytes());
+            archivoDoc.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+}
+
+
+
+

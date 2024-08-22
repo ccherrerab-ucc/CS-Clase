@@ -1,0 +1,18 @@
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class CrearArchivoDoc {
+
+    public static void main(String[] args) {
+
+        String contenido = "Main ABIERTOS - CERRADO. Contiene una interfaz Figura y dos clases que implementan dicha interfaz (Circulo y Cuadrado), así como una clase Figuras que contiene una colección de figuras y métodos para agregar y dibujar figuras. Se crean instancias de las clases Circulo y Cuadrado, y luego agregarlos a una instancia de la clase Figuras. Finalmente, llamamos al método dibujarFiguras() en la instancia de la clase Figuras. Es decir, se crean instancias de Circulo y Cuadrado, se agregan a una instancia de Figuras y luego se llama al método dibujarFiguras() para dibujar ambas figuras";
+        try (FileOutputStream archivoDoc = new FileOutputStream("ImpMain3.doc")) {
+            archivoDoc.write(contenido.getBytes());
+            archivoDoc.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+}
