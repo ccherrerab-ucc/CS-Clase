@@ -18,8 +18,8 @@ public abstract class EmployeesDAO implements IDAO {
         cnn = Conexion.getInstance();
     }
 
-    @Override
-    public String registrar(EmployeesDAO ejecutivo) {
+
+    public String registrar(EmployeesDTO ejecutivo) {
         int resultado = 0;
         String salida = null;
         try {
@@ -42,6 +42,7 @@ public abstract class EmployeesDAO implements IDAO {
             psmt.setInt(16, ejecutivo.getRestDay());
             resultado = psmt.executeUpdate();
         } catch (SQLException e) {
+            System.out.println("Error de MySQL: " + e.getMessage());
             throw new RuntimeException(e);
         }
         if (resultado != 0) {

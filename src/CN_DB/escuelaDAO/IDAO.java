@@ -6,9 +6,9 @@ import  CN_DB.escuelaDAO.EmployeesDAO;
 
 
 public interface IDAO {
-    public String registrar (EmployeesDAO employeesDTO);
+    public String registrar (EmployeesDAO ejecutivo);
     public ArrayList<EmployeesDAO> consultar_todos();
-    public String eliminar (EmployeesDAO employeesDTO);
-    public String update (EmployeesDAO employeesDTO);
+    public String eliminar (EmployeesDAO ejecutivo);
+    public String update (EmployeesDAO ejecutivo);
     public EmployeesDAO leer (int clave);
 }
