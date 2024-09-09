@@ -1,0 +1,4 @@
+Factory Method:
+
+Problema: Crear instancias de objetos de una clase sin especificar la clase concreta, permitiendo la flexibilidad y extensibilidad del sistema.
+Solución: Delegar la creación de objetos a subclases concretas a través de un método de fábrica, permitiendo que el cliente interactúe con los objetos sin conocer sus detalles de implementación.

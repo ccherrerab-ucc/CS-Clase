@@ -1,0 +1,21 @@
+Patrón Abstract Factory
+Nombre del Patrón: Abstract Factory
+
+Categoría: Creacional
+
+Problema que Resuelve: El patrón Abstract Factory resuelve el problema de crear familias de objetos relacionados sin especificar sus clases concretas. Esto es útil cuando se necesita crear productos que pertenecen a una misma familia o conjunto, pero el tipo concreto de productos puede variar.
+
+Implicaciones y/o Desventajas:
+
+Implicaciones: Facilita la creación de objetos que pertenecen a la misma familia, garantizando que los productos sean compatibles entre sí.
+Desventajas: Puede aumentar la complejidad del código debido a la introducción de múltiples fábricas y productos. Si se añaden nuevas familias de productos, también es necesario actualizar el código de las fábricas y los clientes.
+Patrones Relacionados:
+
+Factory Method: Abstract Factory usa Factory Method para crear los productos concretos.
+Builder: Puede ser usado para construir productos complejos con múltiples variantes.
+Aspectos en Donde es Usado:
+
+Cuando un sistema necesita ser independiente de cómo se crean, componen y representan sus productos.
+En aplicaciones que necesitan trabajar con diferentes conjuntos de productos (por ejemplo, diferentes estilos de interfaces de usuario para distintos sistemas operativos).
+En sistemas que deben permitir la expansión para incluir nuevas familias de productos sin modificar el código existente.
+Patrón Factory Method (Ejemplo de Notificaciones)

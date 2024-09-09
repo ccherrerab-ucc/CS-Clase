@@ -1,0 +1,19 @@
+Nombre del Patrón: Factory Method
+
+Categoría: Creacional
+
+Problema que Resuelve: El patrón Factory Method resuelve el problema de la creación de objetos sin especificar la clase concreta del objeto. Permite que las subclases decidan qué clase instanciar, lo cual es útil cuando se tiene una clase base con múltiples implementaciones concretas.
+
+Implicaciones y/o Desventajas:
+
+Implicaciones: Permite la creación de objetos sin acoplar el código cliente a las clases concretas. Facilita la extensión del sistema al permitir la adición de nuevas variantes de productos.
+Desventajas: Puede resultar en una jerarquía de clases más compleja, ya que se deben crear fábricas concretas para cada tipo de producto.
+Patrones Relacionados:
+
+Abstract Factory: Puede usar Factory Method para crear productos concretos en cada familia.
+Singleton: Puede usarse para asegurar que solo haya una instancia de una fábrica en el sistema.
+Aspectos en Donde es Usado:
+
+Cuando el código cliente no debe saber qué clases concretas de objetos se están creando.
+En sistemas donde se necesita crear instancias de objetos sin acoplarse a sus clases concretas (por ejemplo, un sistema que envía notificaciones por diferentes canales como correo electrónico o mensaje de texto).
+En aplicaciones que deben permitir la adición de nuevas variantes de productos sin modificar el código cliente.

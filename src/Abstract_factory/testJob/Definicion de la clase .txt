@@ -1,0 +1,9 @@
+Button y Dialog son interfaces que corresponden a los productos abstractos que se crean en tu código (Button y Dialog en Java).
+
+WindowsButton, MacButton, WindowsDialog, y MacDialog son los productos concretos, implementando sus respectivas interfaces, exactamente como en tu código.
+
+GUIFactory es la interfaz de la fábrica abstracta, la cual declara métodos para crear los productos (createButton() y createDialog()).
+
+WindowsFactory y MacFactory son las fábricas concretas que crean productos específicos para Windows y Mac.
+
+Application (en el diagrama aparece como "Aplication" que parece un error tipográfico) es la clase cliente que utiliza la fábrica abstracta para crear y manejar los productos.

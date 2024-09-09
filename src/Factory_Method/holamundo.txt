@@ -1,0 +1,8 @@
+Beneficios del Patrón Factory Method
+Desacoplamiento: El código que usa los objetos no necesita saber qué clase concreta se está instanciando, lo que reduce el acoplamiento.
+Flexibilidad: Permite la introducción de nuevas clases de productos sin alterar el código cliente.
+Simplicidad en la creación de objetos: Centraliza la lógica de creación de objetos en un solo lugar.
+Casos de Uso Comunes
+Cuando un sistema debe ser independiente de cómo sus productos son creados, compuestos y representados.
+Cuando se necesita permitir a las subclases cambiar el tipo de productos que se crean.
+Cuando se debe proporcionar una interfaz para crear una familia de objetos relacionados sin especificar sus clases concretas.

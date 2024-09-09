@@ -1,0 +1,4 @@
+Abstract Factory:
+
+Problema: Crear y gestionar múltiples familias de objetos relacionados sin acoplar el código cliente a las clases concretas.
+Solución: Proporcionar una interfaz para crear familias de objetos, garantizando que los productos sean compatibles y permitiendo cambiar entre diferentes familias de productos sin modificar el código cliente.
