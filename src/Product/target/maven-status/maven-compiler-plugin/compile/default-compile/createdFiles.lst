@@ -1,0 +1,5 @@
+com\mycompany\product\Builder.class
+com\mycompany\product\Product.class
+com\mycompany\product\Director.class
+com\mycompany\product\Main.class
+com\mycompany\product\ConcreteBuilder.class
